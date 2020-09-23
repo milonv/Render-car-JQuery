@@ -51,17 +51,12 @@ h1, p {
     overflow:hidden;
 }
 
-/*.cars__image {
-    display:none
-}*/
-
 .text {
     color: grey;
     font-size: 15px;
-    position: absolute;
-    bottom: 0px;
     width: 100%;
     text-align: center;
+    text-transform: capitalize;
 }
 
 #color-container{
@@ -86,21 +81,22 @@ h1, p {
     pointer-events: none;
 }
 
-.solid-black{background-color: #2E2E2E}
-.midnight-silver{background-color: #43424F}
-.obsidian-black{background-color: #000000}
-.deep-blue{background-color: #212252}
-.silver{background-color: #A8A1A2}
-.white{background-color: #ECEBEC}
-.red{background-color: #c31130;}
-.orange{background-color: #F68B28}
-.yellow{background-color: #FBB842}
-.glacier-blue{background-color: #BBCBD0}
-.electric-blue{background-color: #0F93DA}
-.green-lotus{background-color: #3d7866; border-bottom: 3px solid #f8a00d;}
+.mini[data-name="solid-black"]{background-color: #2E2E2E}
+.mini[data-name="midnight-silver"]{background-color: #43424F}
+.mini[data-name="obsidian-black"]{background-color: #000000}
+.mini[data-name="deep-blue"]{background-color: #212252}
+.mini[data-name="silver"]{background-color: #A8A1A2}
+.mini[data-name="white"]{background-color: #ECEBEC}
+.mini[data-name="red"]{background-color: #c31130;}
+.mini[data-name="orange"]{background-color: #F68B28}
+.mini[data-name="yellow"]{background-color: #FBB842}
+.mini[data-name="glacier-blue"]{background-color: #BBCBD0}
+.mini[data-name="electric-blue"]{background-color: #0F93DA}
+.mini[data-name="green-lotus"]{background-color: #3d7866;}
 .active, .mini:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
   margin-bottom: 1px;
+  border-bottom: 3px solid #f8a00d;
 }
 
 .footer {
@@ -120,22 +116,12 @@ h1, p {
     padding-right: 10px;
 }
 
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 2.5s;
-    animation-name: fade;
-    animation-duration: 2.5s;
-}
-  
-@-webkit-keyframes fade {
-    from {opacity: 1}
-    to {opacity: 1}
-}
-  
-@keyframes fade {
-    from {opacity: 1}
-    to {opacity: 1}
+.cars__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
   
 /* On smaller screens, decrease text size */
