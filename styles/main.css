@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+h1, p {
+    margin: 0;
+}
+
+.logo {
+    margin: 20px;
+    width: 100px;
+}
+
+.title {
+    text-align: center;
+    color: #333333;
+}
+
+.title h1{
+    font-size: 23px;
+    font-weight: 300;
+    margin: 4px 0 0 0;
+    line-height: 1;
+}
+
+.title h2{
+    font-size: 50px;
+    margin-top: 5px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 14px;
+}
+
+.title h3 {
+    font-size: 23px;
+    font-weight: 300;
+    margin-top: 5px;
+    line-height: 1;
+}
+
+#cars-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    overflow:hidden;
+}
+
+/*.cars__image {
+    display:none
+}*/
+
+.text {
+    color: grey;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+#color-container{
+    margin: 0px 10px 60px 10px;
+    text-align: center;
+}
+
+.mini {
+    cursor: pointer;
+    height: 35px;
+    width: 25px;
+    margin: 1px 2px;
+    background-color: #bbb;
+    border-radius: 2px;
+    display: inline-block;
+    transition: box-shadow 0.6s ease;
+}
+
+.mini .active {
+    background: #fff;
+    color: #333;
+    pointer-events: none;
+}
+
+.solid-black{background-color: #2E2E2E}
+.midnight-silver{background-color: #43424F}
+.obsidian-black{background-color: #000000}
+.deep-blue{background-color: #212252}
+.silver{background-color: #A8A1A2}
+.white{background-color: #ECEBEC}
+.red{background-color: #c31130;}
+.orange{background-color: #F68B28}
+.yellow{background-color: #FBB842}
+.glacier-blue{background-color: #BBCBD0}
+.electric-blue{background-color: #0F93DA}
+.green-lotus{background-color: #3d7866; border-bottom: 3px solid #f8a00d;}
+.active, .mini:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1px;
+}
+
+.footer {
+    color: black;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.links {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.links a {
+    border-right: 1px solid grey;
+    padding-right: 10px;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+  
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+
